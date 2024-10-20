@@ -1,0 +1,554 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url(rmmcpicbg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Slight border for definition */
+}
+
+h1{
+    color: #000000;
+    background: rgba(85, 9, 207, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #000000;
+    background: rgba(80, 8, 196, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    margin-bottom: 5px;
+    
+}
+
+input,
+select {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.course{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   margin-bottom: 5px;
+}
+.courseback{
+    background: rgb(129, 68, 243, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.specialization{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   margin-bottom: 5px;
+}
+
+.documents {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   margin-bottom: 5px;
+}
+
+.F137, .BC, .GMC, .M-contract, .OTR, .F138, .HD {
+    flex: 1;
+    margin-right: 10px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #22af43;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.enrollment-info {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+    
+}
+
+.navigation button {
+    width: 80px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+.semester-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5px;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.semester,
+.schoolYear {
+    flex: 1;
+}
+
+.name-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.surname,
+.givenname,
+.middlename {
+    flex: 1;
+}
+
+.surname input,
+.givenname input,
+.middlename input {
+    width: 92%;
+}
+
+.citizenship-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5px;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.citizenship,
+.gender,
+.indigenous {
+    flex: 1;
+}
+
+.citizenship input,
+.gender select,
+.indigenous select {
+    width: 95%;
+}
+
+.ethnicity-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ethnicity,
+.dialect,
+.religion {
+    flex: 1;
+}
+
+.birthDate-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5px;
+    background: rgb(149, 96, 248, 5.);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.birthDate,
+.birthPlace,
+.civilStatus {
+    flex: 1;
+}
+
+.birthDate input,
+.birthPlace input,
+.civilStatus select {
+    width: 95%;
+}
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5px;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contactNo,
+.email,
+.homeAddress {
+    flex: 1;
+}
+
+.contactNo input, .email input, .homeAddress input{
+    width: 95%;
+}
+
+.entrytype{
+    width: 250px;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    
+}
+
+.Exam{
+    width: 100px;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.Exam input{
+    width: 70px;
+}
+
+.info{
+    background: rgba(80, 11, 209, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.Elementary-container{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5px;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.elemback{
+    background: rgb(129, 68, 243, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+.elemSection{
+    width: 230px;
+}
+.elemYear input{
+    width: 100px;
+}
+.elemSchool input{
+    width: 400px;
+}
+.elemSection input{
+    width: 200px;
+}
+.elemAddress input{
+    width: 400px;
+}
+.botom{
+    gap: 10px;
+}
+
+h3{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5px;
+    background: rgb(184, 152, 243, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.juniorHigh-container{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5px;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.junback{
+    background: rgb(129, 68, 243, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+.juniorHigh-container{
+    flex: 1;
+}
+
+.juniorHighYear{
+    width: 100px;
+}
+.juniorHighSchool input{
+    width: 400px;
+}
+.juniorHighAddress input{
+    width: 400px;
+}
+
+.seniorHigh-container{
+    display: flex;
+    gap: 60px;
+    margin-bottom: 5px;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.senback{
+    background: rgb(129, 68, 243, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.seniorHighSchool,
+.seniorHighAddress{
+    width: 400px;
+}
+.academicStrand{
+    width: 150px;
+}
+.academicStrand input{
+    width: 100px;
+}
+.seniorHighYear{
+    width: 100px;
+}
+
+
+.dataprivacy{
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+
+.data{
+    background: rgb(184, 152, 243, .5);
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    margin-bottom: 5px;
+}
+.reminder{
+ color: red;
+}
+.parent{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background: rgb(149, 96, 248, .5);
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+.parentAddress, .parentName{
+width: 75%;
+}
+.parentAddress input, .parentName input{
+width: 400px;
+}
+.parentContact-bot{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background: rgb(149, 96, 248, .5);
+    border-radius: 8px;
+}
+.parentContact, .relationship, .houseOwnership{
+    width: 100%;
+}
+.parentContact input, .relationship input, .houseOwnership select{
+    width: 200px;
+}
+.allparent{
+    background: rgb(129, 68, 243, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+.guard-top{
+    display: flex;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+.guardian{
+    background: rgb(129, 68, 243, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+.guardianAddress, .guardianName{
+width: 90%;
+}
+.guardianAddress input, .guardianName input{
+    width: 400px;
+}
+.guardianContact{
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+.guardianContact input{
+    width: 160px;
+}
+.age-container{
+    display: flex;
+    background: rgb(149, 96, 248, .5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    gap: 100px;
+}
+.age input, .weight input, .height input, .bloodType input{
+    width: 100px;
+}
+
+.medical-container{
+    display: flex;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    gap: 20px;
+}
+.medicalHistory, .congenitalDiseases{
+width: 80%;
+}
+.medicalHistory textarea, .congenitalDiseases textarea{
+width: 390px;
+}
+
+.diagnose-container{
+    display: flex;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    gap: 100px;
+}
+.diagnoseDate, .previousHospitalizations{
+    width: 80%;
+}
+.previousHospitalizations textarea{
+    width: 500px;
+}
+
+.allergies-container{
+    display: flex;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    gap: 20px;  
+}
+.allergies, .medications{
+    width: 80%;
+}
+.allergies textarea, .medications textarea{
+    width: 390px;
+}
+.all-clinic{
+    background: rgb(129, 68, 243, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+.agree-container{
+    display: flex;
+    align-items: center;
+    background: rgb(149, 96, 248, .5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    width: 100px;
+}

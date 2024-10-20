@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container first">
+        <h1>STUDENT ENROLLMENT FORM</h1>
+
+        <div class="info">
+            <h4>The "school" Ramon Magsaysay Memorial Colleges is committed to respect each student′s personal privacy
+                in compliance with Data Privacy Act of 2012 while ensuring its ability to fully carry out its
+                responsibilities.
+
+                It is undestood that you agree to share your personal information by continuing to fill-up this form.
+            </h4>
+        </div>
+
+        <form id="enrollmentForm">
+
+
+
+
+    </div>
+
+    <div class="container second">
+        <h2>Personal Information</h2>
+        <div class="courseback">
+            
+            <div class="course">
+                <label for="course">Selected Course:</label>
+                <select id="course" required>
+                    <option value="">- Select -</option>
+                    <option value="College">College</option>
+                    <option value="Masteral">Masteral</option>
+                    <option value="Senior High">Senior High</option>
+                    <option value="TVET">TVET</option>
+                </select>
+            </div>
+
+            <div class="specialization">
+                <div id="specializationContainer" style="display:none;">
+                    <label for="specialization">Specialization:</label>
+                    <select id="specialization" required>
+                        <option value="">- Select -</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="semester-container">
+
+
+
+                <div class="semester">
+                    <label for="semester">Semester:</label>
+                    <select name="semester" id="semester">
+                        <option value="">- Select -</option>
+                        <option value="1st semester">1st semester</option>
+                        <option value="2nd semester">2nd semester</option>
+                        <option value="Summer">Summer</option>
+                    </select>
+                </div>
+
+                <div class="schoolYear">
+                    <label for="schoolYear">School Year:</label>
+                    <select name="schoolYear" id="schoolYear">
+                        <option value="2022-2023">2022-2023</option>
+                        <option value="2023-2024">2023-2024</option>
+                        <option value="2024-2025">2024-2025</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="name-container">
+                <div class="surname">
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" required>
+                </div>
+                <div class="givenname">
+                    <label for="givenname">Given Name:</label>
+                    <input type="text" id="givenName" required>
+                </div>
+                <div class="middlename">
+                    <label for="middleName">Middle Name:</label>
+                    <input type="text" id="middleName" required>
+
+                </div>
+
+            </div>
+
+            <div class="citizenship-container">
+                <div class="citizenship">
+                    <label for="citizenship">Citizenship:</label>
+                    <input type="text" id="citizenship" placeholder="Filipino" required>
+                </div>
+                <div class="gender">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" required>
+                        <option value="">- Select -</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="indigenous">
+                    <label for="indigenous">Indigenous?</label>
+                    <select id="indigenous" required>
+                        <option value="">- Select -</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+
+            <div class="ethnicity-container">
+                <div class="ethnicity">
+                    <label for="ethnicity">Ethnicity:</label>
+                    <select name="ethnicity" id="ethnicity">
+                        <option value="">- Select -</option>
+                        <option value="Illongo">Illongo</option>
+                        <option value="Bisaya">Bisaya</option>
+                        <option value="T-boli">T-boli</option>
+                    </select>
+                </div>
+
+
+                <div class="dialect">
+                    <label for="dialect">Dialect:</label>
+                    <select name="dialect" id="dialect">
+                        <option value="">- Select -</option>
+                        <option value="Illongo">Illongo</option>
+                        <option value="Bisaya">Bisaya</option>
+                        <option value="T-boli">T-boli</option>
+                    </select>
+                </div>
+
+                <div class="religion">
+                    <label for="religion">Religion:</label>
+                    <select name="religion" id="religion">
+                        <option value="">- Select -</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Roman catholic">Roman catholic</option>
+                        <option value="alliance">alliance</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="birthDate-container">
+                <div class="birthDate">
+                    <label for="birthDate">Birth Date:</label>
+                    <input type="date" id="birthDate" required>
+                </div>
+                <div class="birthPlace">
+                    <label for="birthPlace">Birth Place:</label>
+                    <input type="text" id="birthPlace" placeholder="Region/Municipality/City/BRGY" required>
+                </div>
+
+                <div class="civilStatus">
+                    <label for="civilStatus">Civil Status:</label>
+                    <select id="civilStatus" required>
+                        <option value="">- Select -</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Widowed">Widowed</option>
+                    </select>
+                </div>
+            </div>
+            <div class="contact-container">
+                <div class="contactNo">
+                    <label for="contactNo">Contact No:</label>
+                    <input type="text" id="contactNo" placeholder="09#########" required>
+                </div>
+
+                <div class="homeAddress">
+                    <label for="homeAddress">Home Address:</label>
+                    <input type="text" id="homeAddress" placeholder="Region/Municipality/City/BRGY" required>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="sample@gmail.com" required>
+                </div>
+            </div>
+
+            <div class="entrytype">
+                <label for="entryType">Entry Type:</label>
+                <select id="entryType" required>
+                    <option value="">- Select -</option>
+                    <option value="New">New</option>
+                    <option value="Transferee">Transferee</option>
+                    <option value="Returnee">Returnee</option>
+                </select>
+            </div>
+
+
+            <div class="documents">
+                <label>Documents
+                    :</label>
+
+                <div class="F137">
+                    <label for="F137">F137</label>
+                    <input type="checkbox" id="F137" >
+                </div>
+                <div class="BC">
+                    <label for="BC">BC</label>
+                    <input type="checkbox" id="BC">
+                </div>
+                <div class="GMC">
+                    <label for="GMC">GMC</label>
+                    <input type="checkbox" id="GMC">
+                </div>
+                <div class="M-contract">
+                    <label for="M-contract">M-contract</label>
+                    <input type="checkbox" id="M-contract">
+                </div>
+                <div class="OTR">
+                    <label for="OTR">OTR</label>
+                    <input type="checkbox" id="OTR">
+                </div>
+                <div class="F138">
+                    <label for="F138/card">F138/card</label>
+                    <input type="checkbox" id="F138/card">
+                </div>
+                <div class="HD">
+                    <label for="HD">HD</label>
+                    <input type="checkbox" id="HD">
+                </div>
+
+            </div>
+            <div class="Exam">
+                <label for="result">Exam Result</label>
+                <input type="number" id="result" placeholder="-0-" required>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container third" style="display: none;">
+        <h2>Previous Scholastic Data</h2>
+        <div class="elemback">
+            <h3>Elementary</h3>
+            <div class="Elementary-container">
+
+                <div class="Elementary">
+                    <div class="elemSchool">
+                        <label for="elemSchool">Elementary Completed:</label>
+                        <input type="text" id="elemSchool" placeholder="Dimakilala Elementary School" required>
+                    </div>
+                    <div class="elemAddress">
+                        <label for="elemAddress">School Address:</label>
+                        <input type="text" id="elemAddress" placeholder="Region/Municipality/City/BRGY" required>
+                    </div>
+
+
+                </div>
+                <br>
+                <div class="botom">
+                    <div class="elemSection">
+                        <label for="elemSection">Section:</label>
+                        <input type="text" id="elemSection" placeholder="Section" required>
+                    </div>
+                    <div class="elemYear">
+                        <select name="elemYear" id="elemYear">
+                            <option value="2022-2023">2022-2023</option>
+                            <option value="2023-2024">2023-2024</option>
+                            <option value="2024-2025">2024-2025</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="junback">
+            <h3>Junior High</h3>
+            <div class="juniorHigh-container">
+                <div class="juniorHigh">
+                    <div class="juniorHighSchool">
+                        <label for="juniorHighSchool">[Junior] High School Completed:</label>
+                        <input type="text" id="juniorHighSchool" placeholder="Dimakilala Natioanal High School"
+                            required>
+                    </div>
+
+                    <div class="juniorHighAddress">
+                        <label for="juniorHighAddress">School Address:</label>
+                        <input type="text" id="juniorHighAddress" placeholder="Region/Municipality/City/BRGY" required>
+                    </div>
+                </div>
+                <br>
+                <div class="jrbotom">
+                    <div class="juniorHighYear">
+                        <select name="juniorHighYear" id="juniorHighYear">
+                            <option value="2022-2023">2022-2023</option>
+                            <option value="2023-2024">2023-2024</option>
+                            <option value="2024-2025">2024-2025</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="senback">
+            <h3>Senior High</h3>
+            <div class="seniorHigh-container">
+                <div class="seniorHigh">
+                    <div class="seniorHighSchool">
+                        <label for="seniorHighSchool">Senior High School Completed:</label>
+                        <input type="text" id="seniorHighSchool" placeholder="Dimakilala Natioanal High School"
+                            required>
+                    </div>
+                    <div class="seniorHighAddress">
+                        <label for="seniorHighAddress">School Address:</label>
+                        <input type="text" id="seniorHighAddress" placeholder="Region/Municipality/City/BRGY" required>
+                    </div>
+                </div>
+
+                <div class="seniorbotom">
+                    <div class="academicStrand">
+                        <label for="academicStrand">Academic Strand:</label>
+                        <input type="text" id="academicStrand" placeholder="STEM" required>
+                    </div>
+                    <div class="seniorHighYear">
+                        <select name="seniorHighYear" id="seniorHighYear">
+                            <option value="2022-2023">2022-2023</option>
+                            <option value="2023-2024">2023-2024</option>
+                            <option value="2024-2025">2024-2025</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="lastsinior">
+                    <div class="lnr">
+                        <label for="lrn">LRN:</label>
+                        <input type="text" id="lrn" placeholder="131**********" required>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="container forth" style="display: none;">
+        <h2>Parent and Guardian Data</h2>
+
+        <div class="allparent">
+            <h3>Parent</h3>
+            <div class="parent">
+
+                <div class="parentName">
+                    <label for="parentName">Parent Full Name:</label>
+                    <input type="text" id="parentName" required>
+                </div>
+                <div class="parentAddress">
+                    <label for="parentAddress">Address:</label>
+                    <input type="text" id="parentAddress" placeholder="Region/Municipality/City/BRGY" required>
+                </div>
+
+            </div>
+            <div class="parentContact-bot">
+                <div class="parentContact">
+                    <label for="parentContact">Contact No:</label>
+                    <input type="text" id="parentContact" placeholder="09*********" required>
+                </div>
+
+
+                <div class="relationship">
+                    <label for="relationship">Relationship:</label>
+                    <input type="text" id="relationship" placeholder="Mother/Father" required>
+                </div>
+
+                <div class="houseOwnership">
+                    <label for="houseOwnership">House:</label>
+                    <select id="houseOwnership" required>
+                        <option value="">- Select -</option>
+                        <option value="Own">Own</option>
+                        <option value="Rented">Rented</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="guardian">
+            <h3>Guardian</h3>
+            <div class="guard-top">
+                <div class="guardianName">
+                    <label for="guardianName">Guardian Full Name:</label>
+                    <input type="text" id="guardianName" required>
+                </div>
+
+                <div class="guardianAddress">
+                    <label for="guardianAddress">Address:</label>
+                    <input type="text" id="guardianAddress" placeholder="Region/Municipality/City/BRGY" required>
+                </div>
+            </div>
+
+
+            <div class="guardianContact">
+                <label for="guardianContact">Contact No:</label>
+                <input type="text" id="guardianContact" placeholder="09*********" required>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="container fifth" style="display: none;">
+        <h2>Student Clinical-Basal Data</h2>
+<div class="all-clinic">
+    
+
+    <div class="age-container">
+        <div class="age">
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="-0-" required>
+        </div>
+
+        <div class="height">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="-0-" required>
+        </div>
+
+        <div class="weight">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="-0-" required>
+
+        </div>
+        <div class="bloodType">
+            <label for="bloodType">Blood Type:</label>
+            <select id="bloodType" required>
+                <option value="">- Select -</option>
+                <option value="O-">O-</option>
+                <option value="O+">O+</option>
+                <option value="A-">A-</option>
+                <option value="A+">A+</option>
+                <option value="B-">B+</option>
+                <option value="AB-">AB-</option>
+                <option value="AB+">AB+</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="medical-container">
+        <div class="medicalHistory">
+            <label for="medicalHistory">Medical History:</label>
+            <textarea id="medicalHistory" placeholder="Describe any medical conditions"></textarea>
+        </div>
+        <div class="congenitalDiseases">
+            <label for="congenitalDiseases">Congenital Diseases/Disabilities:</label>
+            <textarea type="text" id="congenitalDiseases" placeholder="If any"></textarea>
+        </div>
+    </div>
+    <div class="diagnose-container">
+        <div class="diagnosedDate">
+            <label for="diagnosedDate">Date Diagnosed:</label>
+            <input type="date" id="diagnosedDate">
+        </div>
+        <div class="previousHospitalizations">
+            <label for="previousHospitalizations">Previous Hospitalizations:</label>
+            <textarea id="previousHospitalizations" placeholder="Describe any previous hospitalizations"></textarea>
+        </div>
+    </div>
+    <div class="allergies-container">
+        <div class="allergies">
+            <label for="allergies">Allergies:</label>
+            <textarea id="allergies" placeholder="If any, specify medicine, food, etc."></textarea>
+        </div>
+        <div class="medications">
+            <label for="medications">Medications:</label>
+            <textarea id="medications" placeholder="Emergency/Maintenance & Indications"></textarea>
+        </div>
+</div>
+        
+
+        </div>
+
+
+
+    </div>
+    <div class="container sixth">
+        <div class="data">
+            <H4>Data Privacy Agreement:</H4>
+        </div>
+        <div class="dataprivacy">
+            <h4>
+                I hereby allow the school "Ramon Magsaysay Memorial Colleges Inc." to collect, use and process my
+                personal
+                data for legitimate educational or institutional interest as determined and enumerated in the
+                Privacy
+                Statement and other like circumstances, and allow its authorized personnel to process the
+                information.
+                I am confirming that data entered with this admission is true and correct; and I understand that
+                Ramon
+                Magsaysay Memorial Colleges reserves the right to revise any decision made on the basis of the
+                information I
+                provide should be found to be untrue or incorrect.
+            </H4>
+            <div class="reminder">
+                <H4> Start of classes will be announced soon!</H4>
+
+            </div>
+            
+
+        </div>
+        <div class="agree-container">
+            <label for="agreelabel">Yes I Agree</label>
+            <input type="checkbox" id="agreelabel">
+        </div>
+    </div>
+    <div class="navigation">
+        <button type="button" id="returnButton" style="display: none;">Return</button>
+        <button type="button" id="nextButton">Next</button>
+    </div>
+    </form>
+
+    <script src="script.js"></script>
+    <script src="contanernext.js"></script>
+</body>
+
+</html>
